@@ -9,13 +9,13 @@ public class MyAssertEqualsTest {
     public void mySimpleEqualsTest(){
          
         String expectedName = "Nattu";
-        assertEquals(expectedName, Employee.getEmpNameWithHighestSalary());
+        assertEquals(expectedName, Trabajador.getNombreTrabjadorMayorSalario());
     }
      
     @Test
     public void myObjectEqualsTest(){
          
-        Employee expectedEmpObj = new Employee(1, "Nattu", 15000);
-        assertEquals(expectedEmpObj, Employee.getHighestPaidEmployee());
+        Trabajador expectedEmpObj = new Trabajador(1, "Nattu", 15000);
+        assertEquals(expectedEmpObj, Trabajador.getTrabajadorMayorSalario());
     }
 }

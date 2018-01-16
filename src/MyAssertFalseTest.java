@@ -3,7 +3,7 @@ import static org.junit.Assert.*;
  
 public class MyAssertFalseTest {
  
-    public boolean isEvenNumber(int number){
+    public boolean esNumeroPar(int number){
          
         boolean result = false;
         if(number%2 == 0){
@@ -13,8 +13,8 @@ public class MyAssertFalseTest {
     }
      
     @Test
-    public void evenNumberTest(){
-        MyAssertFalseTest asft = new MyAssertFalseTest();
-        assertFalse(asft.isEvenNumber(3));
+    public void testNumeroPar(){
+        MyAssertFalseTest prueba = new MyAssertFalseTest();
+        assertFalse(prueba.esNumeroPar(3));
     }
 }
